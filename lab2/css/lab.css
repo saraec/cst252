@@ -56,20 +56,6 @@ column-count:3;
   margin-right: 10px;
 }
 
-figcaption {
-  margin-left: 150px;
-  font-family: 'IM Fell DW Pica', serif;
-  font-weight: 800;
-  font-style: normal;
-  font-size: 155%;
-}
-
-img {
-  max-width: 80%;
-  min-width: 300px;
-  margin-left: 150px;
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -79,9 +65,8 @@ a:hover {
   color: gray;
 }
 
-@media screen and (max-width: 600px) {
-  section, h1, img {
-    margin-left: 50px;
-    margin-right: 50px;
-  }
+  @media screen and (max-width: 900px) {
+    section {
+      max-width: 100%;
+    }
 }
