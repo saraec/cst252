@@ -46,7 +46,9 @@ column-count:3;
   top: 0;
   padding: 1px;
   color: #ffffff;
+  margin-bottom: 20px;
   border-radius: 7px;
+  text-align: center;
 }
 
 .navbar-nav {
@@ -58,11 +60,11 @@ column-count:3;
 
 a {
     text-decoration: none;
-    color: white;
+    color: white!important;
 }
 
 a:hover {
-  color: gray;
+  color: gray!important;
 }
 
   @media screen and (max-width: 900px) {
