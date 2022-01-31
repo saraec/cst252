@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@1&display=swap');
+
+body {
+    background-color: #ebebeb;
+    background-position: right top;
+    background-attachment: fixed;
+    background-repeat: none;
+    background-size: cover;
+    font-family: inherit;
+    padding: 18px;
+    margin: 50px;
+    font-size: 125%;
+    color: #000000;
+}
+
+h1, h2, h3 {
+    font-family: 'IM Fell DW Pica', serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 175%;
+    letter-spacing: 3px;
+    }
+
+.title {
+  max-width: 70%;
+  font-size: 285%;
+  letter-spacing: 2px;
+  margin-left: 150px;
+}
+
+section {
+  text-align: left;
+  margin-left: 150px;
+  margin-right: 150px;
+  max-width: 80%;
+  min-width:250px;
+}
+
+.summary {
+column-count:3;
+}
+
+#links {
+  background-color: #000000;
+  position: sticky;
+  top: 0;
+  padding: 1px;
+  color: #ffffff;
+  border-radius: 7px;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  margin-right: 10px;
+}
+
+figcaption {
+  margin-left: 150px;
+  font-family: 'IM Fell DW Pica', serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 155%;
+}
+
+img {
+  max-width: 80%;
+  min-width: 300px;
+  margin-left: 150px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+  color: gray;
+}
+
+@media screen and (max-width: 600px) {
+  section, h1, img {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
