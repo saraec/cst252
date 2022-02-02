@@ -28,19 +28,12 @@ h1, h2, h3 {
   text-align: center;
 }
 
-.row {
-  padding: 20px;
-}
-
-.picture {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+.col img {
+  object-fit: cover;
 }
 
 img {
-  max-width: 40%;
+  max-width: 100%;
   min-width: 200px;
   max-height: 400px;
   min-height: 250px;
