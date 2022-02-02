@@ -78,4 +78,7 @@ a:hover {
     section {
       max-width: 100%;
     }
+    .summary {
+      column-count: 1;
+    }
 }
