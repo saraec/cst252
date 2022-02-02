@@ -13,6 +13,22 @@ body {
     color: #000000;
 }
 
+.photo{
+  display: block;
+  float: right;
+  max-width: 400px;
+  margin: 10px;
+}
+
+img {
+   width: 100%;
+  max-width: 100%;
+}
+
+.col-sm-8 {
+  margin: 0;
+}
+
 .navbar {
   background-color: black;
   color: #028a0f;
@@ -46,9 +62,6 @@ h2, h3 {
 
 section {
   text-align: left;
-  margin-left: 150px;
-  margin-right: 150px;
-  max-width: 80%;
   min-width:250px;
 }
 
