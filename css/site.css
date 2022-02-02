@@ -13,6 +13,13 @@ body {
     color: #000000;
 }
 
+.navbar {
+  background-color: black;
+  color: #028a0f;
+  font-family: inherit;
+  margin-bottom: 15px;
+}
+
 h1 {
   text-align: center;
   font-size: 250%;
@@ -65,13 +72,17 @@ column-count:3;
   margin-right: 10px;
 }
 
+.nav-home {
+  font-weight: bold;
+}
+
 a {
     text-decoration: none;
-    color: white;
+    color: #d0f0c0!important;
 }
 
 a:hover {
-  color: gray;
+  color: #2e8b57!important;
 }
 
   @media screen and (max-width: 900px) {

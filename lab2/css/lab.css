@@ -60,11 +60,11 @@ column-count:3;
 
 a {
     text-decoration: none;
-    color: white!important;
+    color: #d0f0c0!important;
 }
 
 a:hover {
-  color: gray!important;
+  color: #2e8b57!important;
 }
 
   @media screen and (max-width: 900px) {
