@@ -21,6 +21,10 @@ h1, h2 {
     letter-spacing: 3px;
     }
 
+h1 {
+  text-align: center;
+}
+
 h3 {
   font-family: 'IM Fell DW Pica', serif;
   font-weight: 800;
