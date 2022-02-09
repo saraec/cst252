@@ -4,10 +4,10 @@
 // 2.9.2022.
 
 // Define variables.
-    make = "Chevy";
-    model = "Cruze";
-    color = "Silver";
-    year = 2011;
+  var make = "Chevy";
+  var model = "Cruze";
+  var color = "Silver";
+  var year = 2011;
 
 // calculate
 age = 2022 - year;
