@@ -44,6 +44,10 @@ h3 {
   object-fit: cover;
 }
 
+.col-sm-6 img{
+  float: right;
+}
+
 img {
   max-width: 100%;
   min-width: 200px;
