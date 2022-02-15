@@ -1,19 +1,19 @@
-// Arrays and Objects. .
-// Creating Arrays and printing Objects.
-// SaraChristensen. ArianaMoniz.
-// 2.14.2022.
+/**
+ * SaraChristensen
+ * 2.14.2022
+ **/
 
 // Define variables.
-myTransport = ["Chevy Cruze", "walk", "carpool"];
+myTransport = ["Chevy Cruze", "walk", "carpool" ];
 
 myMainRide = {
-  var make = "Chevy",
-  var model = "Cruze",
-  var color = "Silver",
-  var year = 2011,
-  age : function() {
-      return 2022 - age;
-  }
+    make : "Chevy",
+    model : "Cruze",
+    color : "Silver",
+    year : 2011,
+    age : function() {
+      return 2022 - year;
+    }
 }
 
 //output
