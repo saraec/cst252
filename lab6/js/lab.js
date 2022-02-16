@@ -4,19 +4,19 @@
  **/
 
 // Define variables.
-myTransport = ["Chevy Cruze", "walk", "carpool" ];
+var myTransport = ["Chevy Cruze", "walk", "carpool" ];
 
-myMainRide = {
-    make : "Chevy",
-    model : "Cruze",
-    color : "Silver",
-    year : 2011,
-    age : function() {
-      return 2022 - year;
+var myMainRide = {
+      make : "Chevy",
+      model : "Cruze",
+      color : "silver",
+      year : 2011,
+      age : function() {
+        return 2022 - this.year;
     }
 }
 
 //output
-document.writeln("Types of transportation I use: ", myTransport, "</br>");
-document.writeln("My Main Ride: <pre>",
+document.writeln("Ways I get around: ", myTransport, "</br>");
+document.writeln("The main way I get around: <pre>",
     JSON.stringify(myMainRide, null, '\t'), "</pre>");
