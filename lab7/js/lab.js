@@ -22,6 +22,7 @@
   }
 
         // sorting capital letters together
+        // https://stackoverflow.com/questions/196972/convert-string-to-title-case-with-javascript
 function sortCapLetters(str) {
   return str.replace(
     /\w\S*/g,
