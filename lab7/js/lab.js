@@ -21,5 +21,15 @@
             return nameSorted;
   }
 
+        // sorting capital letters together
+function sortCapLetters(str) {
+  return str.replace(
+    /\w\S*/g,
+    function(txt) {
+      return txt.charAt(0).sortCapLetters() + txt.substr(1).toLowerCase();
+    }
+  );
+}
+
       // call the function and output the results with document.write()
     document.writeln("Your new name is: ", sortUserName());
