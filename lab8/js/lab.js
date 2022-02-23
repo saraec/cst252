@@ -27,3 +27,8 @@
             })
           // test
           console.log("Divide the array by two: ", result);
+
+          var sortedNumbers = array.sort(function(a, b) {
+                	return a-b;
+            	});
+          console.log("Sorted Array: ", sortedNumbers);
