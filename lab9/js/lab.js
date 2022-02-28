@@ -25,7 +25,7 @@
             console.log("Button 2 " + twoEl);
 
             // Task x https://www.w3schools.com/jsref/met_document_createattribute.asp
-                function myFunction() {
+                function newAttribute() {
                 // Create a class attribute:
                 const att = document.createAttribute("style");
 
@@ -36,4 +36,4 @@
                 document.getElementsByTagName("h1")[0].setAttributeNode(att);
                 }
 
-                console.log(myFunction);
+                console.log(newAttribute);
