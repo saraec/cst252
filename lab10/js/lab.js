@@ -7,7 +7,7 @@
  // sortUserName - a function that takes user input and sorts the letters of their name
  function sortUserName(userName) {
      // // convert to lower case
-       userName = userName.toLowerCase();
+       var userName = userName.toLowerCase();
        console.log("userName =", userName);
      // // split string to array
        var nameArray = userName.split('');
@@ -31,8 +31,6 @@
      var shuffledArray = shuffleArray(nameArray);
      console.log("shuffledArray =", shuffledArray);
      var shuffledString = shuffledArray.join("");
-     // shift to Title Case (like a name)
-     var newName = toTitleCase(shuffledString);
      // return array to a string
      return newName;
  }
