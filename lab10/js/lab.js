@@ -3,43 +3,52 @@
  * Created:   3.2.2022
  **/
 
- // Borrow the sort() function or my anagram() function from Lab 7 (Both functions are from Wes's code)
- // sortUserName - a function that takes user input and sorts the letters of their name
- function sortUserName(userName) {
-     // // convert to lower case
-       var userName = userName.toLowerCase();
-       console.log("userName =", userName);
-     // // split string to array
-       var nameArray = userName.split('');
-       console.log("nameArray =", nameArray);
-     // // sort the array
-       var nameArraySort = nameArray.sort();
-       console.log("nameArraySort =", nameArraySort);
-     // // join array back to a string
-       var nameSorted = nameArraySort.join('');
-       console.log("nameSorted =", nameSorted);
-     // // Note that I could have done the above lines as a single line:
-       userName.toLowerCase().split("").sort().join("")
-       return userName.toLowerCase().split("").sort().join("");
+ // Borrow the sort() function or my anagram() function from Lab 7 (Named functions are from Wes's code)
+ // shuffleArray - take an array and shuffle the contents
+ // Thanks to https://stackoverflow.com/questions/2450954/how-to-randomize-shuffle-a-javascript-array
+ function shuffleArray(array) {
+     var currentIndex = array.length, temporaryValue, randomIndex;
+     // While there remain elements to shuffle...
+     while (0 !== currentIndex) {
+         // Pick a remaining element...
+         randomIndex = Math.floor(Math.random() * currentIndex);
+         currentIndex -= 1;
+
+         // And swap it with the current element.
+         temporaryValue = array[currentIndex];
+         array[currentIndex] = array[randomIndex];
+         array[randomIndex] = temporaryValue;
+     }
+     return array;
  }
 
- function randomizeName(userName) {
-     // convert userName string to an array
-     var nameArray = userName.toLowerCase().split("");
-     console.log("nameArray =", nameArray);
-     // shuffle array with our shuffle function
-     var shuffledArray = shuffleArray(nameArray);
-     console.log("shuffledArray =", shuffledArray);
-     var shuffledString = shuffledArray.join("");
-     // return array to a string
-     return newName;
+ // sortUserName - a function that takes user input and sorts the letters
+ // of their name
+ function sortUserName(word) {
+     var wordArray = word.toLowerCase().split('');
+     var newArray = shuffleArray(wordArray);
+     return newArray.join('');
  }
+
+ // given a string, return string in Title Case
+ // thanks to https://stackoverflow.com/questions/196972/convert-string-to-title-case-with-javascript
+ function toTitleCase(str) {
+     return str.replace(
+         /\w\S*/g,
+         function(txt) {
+             return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+         }
+     );
+ }
+
 
  // find the button element
       var buttonEl = document.getElementById("my-button");
         console.log("button element:", buttonEl);
+
       var inputEl = document.getElementById("user-name");
         console.log("input element:", inputEl);
+
       var outputEl = document.getElementById("output");
         outputEl.style.color = "green";
         console.log("output element:", outputEl);
