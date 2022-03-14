@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@1&display=swap');
+
+body {
+    background-color: #ebebeb;
+    background-position: right top;
+    background-attachment: fixed;
+    background-repeat: none;
+    background-size: cover;
+    font-family: inherit;
+    padding: 18px;
+    margin: 50px;
+    font-size: 125%;
+    color: #000000;
+}
+
+h1, h2 {
+    font-family: 'IM Fell DW Pica', serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 225%;
+    letter-spacing: 3px;
+    }
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  font-family: 'IM Fell DW Pica', serif;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 175%;
+  letter-spacing: 3px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.col img {
+  object-fit: cover;
+}
+
+img {
+  max-width: 100%;
+  min-width: 200px;
+  max-height: 400px;
+  min-height: 250px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#links {
+  background-color: #000000;
+  top: 0;
+  padding: 1px;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-evenly;
+  margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #d0f0c0!important;
+}
+
+a:hover {
+  color: #2e8b57!important;
+}
+
+  @media screen and (max-width: 900px) {
+    section {
+      max-width: 100%;
+    }
+    .summary {
+      column-count: 1;
+    }
+}
+
+button {
+  margin: 10px;
+}
