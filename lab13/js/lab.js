@@ -1,3 +1,8 @@
+/**
+ * Author:    Sara Christensen
+ * Created:   3.14.2022
+ **/
+
 function sortingHat(name) {
   // get length of name
   var len = name.length;
