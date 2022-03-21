@@ -90,3 +90,10 @@ a:hover {
 button {
   margin: 10px;
 }
+
+.green {
+  color: #028a0f;
+  font-family: felt-tip-senior, serif;
+  font-weight: 400;
+  font-style: normal;
+}

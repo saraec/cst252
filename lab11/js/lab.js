@@ -17,8 +17,6 @@
           $("#my-button").css("background-color", "lightgreen");
 
       // Task X
-            $(".subject").append("<button id=button>Toggle");
-            $("#button").click(function(){
-            $("#my-button").css("background-color", "orange");
-              ontoggle()
-            });
+          $("#subject-button").click(function(){
+            $("#subject").toggleClass("green")
+          })
