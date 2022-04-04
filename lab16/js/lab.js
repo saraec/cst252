@@ -24,5 +24,5 @@ console.log(car.info());
 console.log(bike.info());
 // // we add text (including <p> tags to the end of our output div
 outputEl = document.getElementById(output);
-$("#output").append("<p>" + car.info() + "</p>");
-$("#output").append("<p>" + bike.info() + "</p>");
+$("#output").prepend("<p>" + car.info() + "</p>");
+$("#output").prepend("<p>" + bike.info() + "</p>");
