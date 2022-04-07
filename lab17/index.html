@@ -39,12 +39,12 @@
 				 <div class="col">
 					 <section><h2>Subject</h2>
 							<p class="summary">The subject of this lab is to create a Javascript constructor.</p></section>
-								<img src="img/javascript.jpg">
+								<img src="img/html.jpg">
 				</div>
 				<div class="col">
 						<section><h2>Difficulties</h2>
 						 <p class="summary">Doing an exercise of a similar task during class made completing this lab really easy. I had a bit of trouble getting the string to print in my output div. I never actually fixed it. The issue resolved itself.</p></section>
-								<img src="img/html.jpg">
+								<img src="img/javascript.jpg">
 				</div>
 				</div>
 				<div class="row">
@@ -56,13 +56,79 @@
 								<a href="js/lab.js">*Javascript Source*</a>
 							</div>
 							<div id="oop">
-								<h2>Understand the Problem</h2>
-								<h2>Pseudocode the High Level Approach</h2>
-								<h2>Assign Actions to Objects</h2>
-								<h2>Make Javascript-ish Pseudocode</h2>
+							<div class="row">
+							 <div class="col">
+								<section><h2>Understand the Problem</h2>
+								<ul>
+									<li>Create gameboard and players</li>
+									<li>Create game loop</li>
+									<li>Take inout from players</li>
+									<li>Determine if input is right or wrong</li>
+									<li>If right, add letter to word</li>
+									<li>If wrong add body part to man</li>
+									<li>Win if word is completed</li>
+									<li>Lose if man is completed</li>
+								</ul>
+							</section></div>
+							<div class="col">
+								<section><h2>Pseudocode the High Level Approach</h2>
+								 <p><pre>
+								Set up the game initially
+								    Create a game board
+								    Create a couple players
+								 Start the game loop
+								    Render the board
+										Determine word
+								    Ask for the player's letter guesses
+								    If the game should end
+								        Display the proper victory/loss
+								        Stop looping
+								 </pre></p>
+							</section></div>
+						 </div>
+							 <div class="row">
+							 <div class="col">
+								<section><h2>Assign Actions to Objects</h2>
+									<p><pre>Set up the game initially [Hangman]
+												Create a game board [board]
+												Create a couple players [player]
+										 Start the game loop [Hangman]
+												Render the board [board]
+												Determine word [word]
+												Ask for the player's letter guesses [player]
+												If the game should end [Hangman]
+														Display the proper victory/loss [board]
+														Stop looping
+									</pre></p>
+								</section></div>
+								<div class="col">
+								<section><h2>Make Javascript-ish Pseudocode</h2>
+							    <p><pre>
+										/ Controls the game play
+															class Hangman
+															    // initialize
+															        // set up the board
+															        // set up the players
+
+															    // play
+															        // loop infinitely
+															            // call the board rendering method
+															            // ask for coordinates from the current player
+															            // break the loop IF the game is over
+															            // switch players
+
+															    // check_game_over
+															        // check_victory
+															        // check_draw
+
+															    // check_victory
+															        // IF board says current player's piece has
+															        // a winning_combination?
+															            // display a victory message
+									 </p></pre>
+								</section></div>
 							</div>
 						</div>
-					 </section>
 					</div>
 				</div>
 		</div>
