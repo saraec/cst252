@@ -66,6 +66,7 @@ img {
   display: flex;
   list-style-type: none;
   justify-content: space-evenly;
+  flex-direction: row!important;
   margin-right: 10px;
 }
 
