@@ -11,9 +11,26 @@
 	<div>
 		<div id="content">
 			<div id="input">
-					<p>Enter your birthdate to find out which<br></br> Zodiac constellation you belong to. </p>
-					<input type="text">
-					<button id="button">Enter</button>
+					<p>Enter your birthdate to find out which Zodiac constellation <br></br>you belong to. Use this format: <i>day, month</i>.</p>
+<form action="/action_page.php">
+  <label>Month:</label>
+  <select id="month" name="month">
+    <option value="january">January</option>
+    <option value="february">February</option>
+    <option value="march">March</option>
+    <option value="april">April</option>
+  </select>
+	<label>Day:</label>
+  <select id="day" name="day">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+  </select>
+  <input type="submit">
+</form>
+						<!-- <input type="text">
+						<button id="button">Enter</button> -->
 				 </div>
 				 <div id= "output-box">
 					  <div id=output class="hidden">

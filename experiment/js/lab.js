@@ -5,61 +5,60 @@
 
 var starArray = [
   {
-    title: "Aquarius"
+    title: "Aquarius",
     url: "../img/aquarius.jpg"
   },
   {
-    title: "Pisces"
-    url: "../img/pisces.jpg"
-    location:"Right Ascension: 0.85 hours, Declination: 11.08 degrees, Best viewed: at 9 p.m. between Nov. 6 and Nov. 9."
-    fact: "'The Hubble Space Telescope imaged a pair of bizarre galaxies, called Pisces A and Pisces B, in 2014. Two years later, researchers announced that data from those observations showed the dwarf galaxies used to be by themselves, but over time they moved to a nearby group of galaxies — a process that accelerated star formation.'"
+    title: "Pisces",
+    url: "../img/pisces.jpg",
+    location:"Right Ascension: 0.85 hours, Declination: 11.08 degrees, Best viewed: at 9 p.m. between Nov. 6 and Nov. 9.",
+    fact: "'The Hubble Space Telescope imaged a pair of bizarre galaxies, called Pisces A and Pisces B, in 2014. Two years later, researchers announced that data from those observations showed the dwarf galaxies used to be by themselves, but over time they moved to a nearby group of galaxies — a process that accelerated star formation.'",
     myth: "'The fish themselves are apparently the Greek goddess Aphrodite and her son, Eros, who turned into fish and jumped into the Euphrates River to evade the fiery breath of the monster Typhon, 'the most awful monster the world had ever seen,' according to Ridpath.'"
   },
   {
-    title: "Aries"
+    title: "Aries",
     url: "../img/aries.jpg"
   },
   {
-    title: "Taurus"
+    title: "Taurus",
     url: "../img/taurus.jpg"
   },
   {
-    title: "Gemini"
-    url: "../img/gemini.jpg"
-    location: "By April and May, the constellation can be seen soon after sunset in the west. Right ascension: 7 hours, Declination: 20 degrees."
-    fact: "'Gemini is the radiant point for a meteor shower known as the Geminids, which happen every year around mid-December.'"
+    title: "Gemini",
+    url: "../img/gemini.jpg",
+    location: "By April and May, the constellation can be seen soon after sunset in the west. Right ascension: 7 hours, Declination: 20 degrees.",
+    fact: "'Gemini is the radiant point for a meteor shower known as the Geminids, which happen every year around mid-December.'",
     myth: "'The two brightest stars in the constellation, also named after Greek mythology's Castor and Pollux, represent the heads of the twins, while fainter stars outline the pair's bodies.'"
   },
   {
-    title: "Cancer"
+    title: "Cancer",
     url: "../img/cancer.jpg"
   },
   {
-    title: "Leo"
+    title: "Leo",
     url: "../img/leo.jpg"
   },
   {
-    title: "Virgo"
-    url: "../img/virgo.jpg"
-    location: "Right Ascension: 13 hours, Declination: 0 degrees, Best seen in May at 9 p.m."
-    fact:"The pink planet GJ 504b, which at the time of the announcement in 2013 was the smallest planet ever photographed around a sun-like star. However, the planet itself is still relatively large, at four times the mass of Jupiter."
+    title: "Virgo",
+    url: "../img/virgo.jpg",
+    location: "Right Ascension: 13 hours, Declination: 0 degrees, Best seen in May at 9 p.m.",
+    fact:"The pink planet GJ 504b, which at the time of the announcement in 2013 was the smallest planet ever photographed around a sun-like star. However, the planet itself is still relatively large, at four times the mass of Jupiter.",
     myth:"According to Greek mythology, the earth experienced eternal spring until the god of the underworld abducted the spring maiden Persephone."
   },
-  },
   {
-    title: "Libra"
+    title: "Libra",
     url: "../img/libra.jpg"
   },
   {
-    title: "Scorpio"
+    title: "Scorpio",
     url: "../img/scorpio.jpg"
   },
   {
-    title: "Sagittarius"
+    title: "Sagittarius",
     url: "../img/sagittarius.jpg"
   },
   {
-    title: "Capricorn"
+    title: "Capricorn",
     url: "../img/capricorn.jpg"
   }
 ]
@@ -81,96 +80,90 @@ function zodiac_sign(day, month)
 		if (month == "december"){
 
 			if (day < 22)
-			astro_sign = "Sagittarius";
+  // Wes reccommends we have it return numbers that relate to the objects in our array instead of the constellation name
+			astro_sign = [10];
 			else
-			astro_sign ="capricorn";
+			astro_sign = [11];
 		}
 
 		else if (month == "january"){
 			if (day < 20)
-			astro_sign = "Capricorn";
+			astro_sign =  [11];
 			else
-			astro_sign = "aquarius";
+			astro_sign = [0];
 		}
 
 		else if (month == "february"){
 			if (day < 19)
-			astro_sign = "Aquarius";
+			astro_sign = [0];
 			else
-			astro_sign = "pisces";
+			astro_sign = [1];
 		}
 
 		else if(month == "march"){
 			if (day < 21)
-			astro_sign = "Pisces";
+			astro_sign =  [1];
 			else
-			astro_sign = "aries";
+			astro_sign =  [2];
 		}
 		else if (month == "april"){
 			if (day < 20)
-			astro_sign = "Aries";
+			astro_sign = [2];
 			else
-			astro_sign = "taurus";
+			astro_sign = [3];
 		}
 
 		else if (month == "may"){
 			if (day < 21)
-			astro_sign = "Taurus";
+			astro_sign = [3];
 			else
-			astro_sign = "gemini";
+			astro_sign = [4];
 		}
 
 		else if( month == "june"){
 			if (day < 21)
-			astro_sign = "Gemini";
+			astro_sign = [4];
 			else
-			astro_sign = "cancer";
+			astro_sign = [5];
 		}
 
 		else if (month == "july"){
 			if (day < 23)
-			astro_sign = "Cancer";
+			astro_sign = [5];
 			else
-			astro_sign = "leo";
+			astro_sign = [6];
 		}
 
 		else if( month == "august"){
 			if (day < 23)
-			astro_sign = "Leo";
+			astro_sign =  [6];
 			else
-			astro_sign = "virgo";
+			astro_sign =  [7];
 		}
 
 		else if (month == "september"){
 			if (day < 23)
-			astro_sign = "Virgo";
+			astro_sign = [7];
 			else
-			astro_sign = "libra";
+			astro_sign = [8];
 		}
 
 		else if (month == "october"){
 			if (day < 23)
-			astro_sign = "Libra";
+			astro_sign = [8];
 			else
-			astro_sign = "scorpio";
+			astro_sign = [9];
 		}
 
 		else if (month == "november"){
 			if (day < 22)
-			astro_sign = "scorpio";
+			astro_sign =  [9];
 			else
-			astro_sign = "sagittarius";
+			astro_sign =  [10];
 		}
 
 		document.write(astro_sign);
 	}
-
-// Driver Code
-
-		let day = 19;
-		let month = "may";
-		zodiac_sign(day, month);
-
 
 
 
@@ -191,12 +184,16 @@ function removeClass(ele,cls) {
   }
 }
 
+function constellationName (str) {
+  return starArray[mod];
+}
+
 //   Get input from user
        $("#button").click(function(){
 //     put id input in html
        var date = $("#input").val();
-       var star = sortStar(date);
-       console.log(star)
+       var star = constellationName(date);
+       console.log(constellationName)
 //     put id output in html
         $("#output").html("<img src=" + starArray.url + ">");
 //     append paragraph to output
@@ -205,6 +202,8 @@ function removeClass(ele,cls) {
 })
 
 //Wes's code from Lab 13
+    var newText = "<h2>" + star.title + "</h2>" +
+          "<p>" + star.url + "</p>";
   var outputArea = document.getElementById("output");
   outputArea.innerHTML = newText;
   removeClass(outputArea, "hidden");
