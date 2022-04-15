@@ -71,8 +71,7 @@ var starArray = [
 
 // Function to calculate sum
 // digits of n
-function zodiac_sign(day, month)
-	{
+function zodiac_sign(day, month)	{
 		let astro_sign="";
 
 		// checks month and date within the
@@ -80,7 +79,6 @@ function zodiac_sign(day, month)
 		if (month == "december"){
 
 			if (day < 22)
-  // Wes reccommends we have it return numbers that relate to the objects in our array instead of the constellation name
 			astro_sign = [10];
 			else
 			astro_sign = [11];
@@ -165,7 +163,20 @@ function zodiac_sign(day, month)
 		document.write(astro_sign);
 	}
 
-
+// take a string and return a hashed checksum of the string
+// from c
+function checksum(s) {
+  var hash = 0, strlen = s.length, i, c;
+  if ( strlen === 0 ) {
+    return hash;
+  }
+  for ( i = 0; i < strlen; i++ ) {
+    c = s.charCodeAt( i );
+    hash = ((hash << 5) - hash) + c;
+    hash = hash & hash; // Convert to 32bit integer
+  }
+  return hash;
+};
 
 // Three pure javascript functions to manipulate classes
 // from https://stackoverflow.com/questions/6787383/how-to-add-remove-a-class-in-javascript
@@ -184,33 +195,37 @@ function removeClass(ele,cls) {
   }
 }
 
-function constellationName (str) {
-  return starArray[mod];
+// Given a name, hash the string, and
+// return Gryffindor, Ravenclaw, Slytherin, and Hufflepuff
+function zodiac_sign(day, month) {
+  checksumValue = checksum(str);
+  mod = Math.abs(checksumValue) % housesArray.length;
+  return starArray[ur];      // returns an object from the array
 }
 
 //   Get input from user
-       $("#button").click(function(){
+ $("#button").click(function(){
 //     put id input in html
-       var date = $("#input").val();
-       var star = constellationName(date);
-       console.log(constellationName)
+ var date = $("#input").val();
+ var star = constellationName(date);
+ console.log(constellationName);
 //     put id output in html
-        $("#output").html("<img src=" + starArray.url + ">");
+  $("#output").html("<img src=" + starArray.url + ">");
 //     append paragraph to output
-        var newText = "Your Zodiac constellation is " + starArray.url;
-        document.getElementById("output").innerHTML = newText;
+  var newText = "Your Zodiac constellation is " + starArray.url;
+  document.getElementById("output").innerHTML = newText;
 })
 
 //Wes's code from Lab 13
-    var newText = "<h2>" + star.title + "</h2>" +
-          "<p>" + star.url + "</p>";
+  var newText = "<h2>" + starArray.title + "</h2>" +
+          "<p>" + starArray.url + "</p>";
   var outputArea = document.getElementById("output");
   outputArea.innerHTML = newText;
   removeClass(outputArea, "hidden");
   removeClass(document.getElementById("hidden"));
 
-var myInput = document.getElementById("input");
-myInput.addEventListener("focus", function() {
+  var myInput = document.getElementById("input");
+  myInput.addEventListener("focus", function() {
   addClass(document.getElementById("output"), "hidden");
   addClass(document.getElementById("hidden"));
 });
