@@ -1,10 +1,17 @@
+
+
+div{
+  position:relative;
+  text-align:center;
+}
+
 body{
   background-image: url(../img/night-sky.png);
   background-size: cover;
   color: white;
   font-family: Arial;
   font-weight: bolder;
-  margin-top:5%;
+  margin-top:2%;
   text-align:center;
 }
 h2, h3, h4,p{
@@ -31,12 +38,14 @@ input[placeholder]{
     font-weight: bold;
     color: darkblue;
 }
-#display{
+
+#display, h4#display{
   border:#404040;
-  color:darkblue;
-  background-color:#b3d9ff;
+  color:white;
+/* background-color:#b3d9ff; */
   padding-top:5%;
   padding-bottom:5%;
+  margin: 10px;
   text-align:center;
   font-family: Arial;
   font-weight: bold;
@@ -73,19 +82,6 @@ div{
   text-align:center;
 }
 
-#horoscope{
-  -webkit-transform:rotate();
-  transform:rotate();
-  -ms-transform:rotate();
-  margin-top:10%;
-    width:50%;
-    height: 50%;
-    height: auto;
-  position:relative;
-    top:0;
-    left:0;
-  z-index:1;
-}
 #zodiac{
   position:absolute;
   z-index:2;

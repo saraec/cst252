@@ -69,99 +69,111 @@ var starArray = [
 // JavaScript program to display astrological sign
 // or Zodiac sign for given date of birth
 
-// Function to calculate sum
-// digits of n
-function zodiac_sign(day, month)	{
-		let astro_sign=["Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn"];
+    // Function to calculate sum
+    // digits of n
+    function zodiac_sign(day, month)	{
+    		var astro_sign=["Aquarius", "Pisces", "Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn"];
 
-		// checks month and date within the
-		// valid range of a specified zodiac
-		if (month == "december"){
+    		// checks month and date within the
+    		// valid range of a specified zodiac
+    		if (month == "december"){
 
-			if (day < 22)
-			astro_sign = [10];
-			else
-			astro_sign = [11];
-		}
+    			if (day < 22)
+    			astro_sign = [10];
+    			else
+    			astro_sign = [11];
+          document.write("<p>" + starArray[11].title + "</p>" + "<img src=" + starArray[11].url + ">");
+    		}
 
-		else if (month == "january"){
-			if (day < 20)
-			astro_sign =  [11];
-			else
-			astro_sign = [0];
-		}
+    		else if (month == "january"){
+    			if (day < 20)
+    			astro_sign =  [11];
+    			else
+    			astro_sign = [0];
+          document.write("<p>" + starArray[0].title + "</p>" + "<img src=" + starArray[0].url + ">");
+    		}
 
-		else if (month == "february"){
-			if (day < 19)
-			astro_sign = [0];
-			else
-			astro_sign = [1];
-		}
+    		else if (month == "february"){
+    			if (day < 19)
+    			astro_sign = [0];
+    			else
+    			astro_sign = [1];
+            document.write("<p>" + starArray[1].title + "</p>" + "<img src=" + starArray[1].url + ">");
+    		}
 
-		else if(month == "march"){
-			if (day < 21)
-			astro_sign =  [1];
-			else
-			astro_sign =  [2];
-		}
-		else if (month == "april"){
-			if (day < 20)
-			astro_sign = [2];
-			else
-			astro_sign = [3];
-		}
+    		else if(month == "march"){
+    			if (day < 21)
+    			astro_sign =  [1];
+    			else
+    			astro_sign =  [2];
+          document.write("<p>" + starArray[2].title + "</p>" + "<img src=" + starArray[2].url + ">")
+    		}
+    		else if (month == "april"){
+    			if (day < 20)
+    			astro_sign = [2];
+    			else
+    			astro_sign = [3];
+          document.write("<p>" + starArray[3].title + "</p>" + "<img src=" + starArray[3].url + ">")
+  		}
 
-		else if (month == "may"){
-			if (day < 21)
-			astro_sign = [3];
-			else
-			astro_sign = [4];
-		}
+    		else if (month == "may"){
+    			if (day < 21)
+    			astro_sign = [3];
+    			else
+    			astro_sign = [4];
+            document.write("<p>" + starArray[4].title + "</p>" + "<img src=" + starArray[4].url + ">")
+    		}
 
-		else if( month == "june"){
-			if (day < 21)
-			astro_sign = [4];
-			else
-			astro_sign = [5];
-		}
+    		else if( month == "june"){
+    			if (day < 21)
+    			astro_sign = [4];
+    			else
+    			astro_sign = [5];
+            document.write("<p>" + starArray[5].title + "</p>" + "<img src=" + starArray[5].url + ">")
+    		}
 
-		else if (month == "july"){
-			if (day < 23)
-			astro_sign = [5];
-			else
-			astro_sign = [6];
-		}
+    		else if (month == "july"){
+    			if (day < 23)
+    			astro_sign = [5];
+    			else
+    			astro_sign = [6];
+            document.write("<p>" + starArray[6].title + "</p>" + "<img src=" + starArray[6].url + ">")
+    		}
 
-		else if( month == "august"){
-			if (day < 23)
-			astro_sign =  [6];
-			else
-			astro_sign =  [7];
-		}
+    		else if( month == "august"){
+    			if (day < 23)
+    			astro_sign =  [6];
+    			else
+    			astro_sign =  [7];
+          document.write("<p>" + starArray[7].title + "</p>" + "<img src=" + starArray[7].url + ">")
+      }
 
-		else if (month == "september"){
-			if (day < 23)
-			astro_sign = [7];
-			else
-			astro_sign = [8];
-		}
+    		else if (month == "september"){
+    			if (day < 23)
+    			astro_sign = [7];
+    			else
+    			astro_sign = [8];
+          document.write("<p>" + starArray[8].title + "</p>" + "<img src=" + starArray[8].url + ">")
+    		}
 
-		else if (month == "october"){
-			if (day < 23)
-			astro_sign = [8];
-			else
-			astro_sign = [9];
-		}
+    		else if (month == "october"){
+    			if (day < 23)
+    			astro_sign = [8];
+    			else
+    			astro_sign = [9];
+          document.write("<p>" + starArray[8].title + "</p>" + "<img src=" + starArray[8].url + ">")
+    		}
 
-		else if (month == "november"){
-			if (day < 22)
-			astro_sign =  [9];
-			else
-			astro_sign =  [10];
-		}
+    		else if (month == "november"){
+    			if (day < 22)
+    			astro_sign =  [9];
+    			else
+    			astro_sign =  [10];
+          document.write("<p>" + starArray[10].title + "</p>" + "<img src=" + starArray[10].url + ">")
+        }
 
-		document.write(astro_sign);
-	}
+    		document.write(astro_sign);
+    	}
 
 // Three pure javascript functions to manipulate classes
 // from https://stackoverflow.com/questions/6787383/how-to-add-remove-a-class-in-javascript
@@ -180,14 +192,20 @@ function removeClass(ele,cls) {
   }
 }
 
+// function printSign(str) {
+//   var signValue = document.write(astro_sign);;
+//   var mod = ;
+//   return housesArray[mod];      // returns an object from the array
+// }
+
 var myButton = document.getElementById("button");
 myButton.addEventListener("click", function() {
   // get value from input field
-  var name = document.getElementById("input").value;
-  // use name to get house from SortingHat function
-  var astro_sign = zodiac_sign(name);
+  var date = document.getElementById("input").value;
+  // use name to get sign from zodiac_sign function
+  var astro_sign = zodiac_sign(date);
   // output to output div (adding some text and HTML around the results)
-  newText = "<h2>" + astro_sign.title + "!</h2>" +
+  var newText = "<h2>" + astro_sign.title + "</h2>" +
           "<img src=" + astro_sign.url + ">";
   var outputArea = document.getElementById("output");
   outputArea.innerHTML = newText;
