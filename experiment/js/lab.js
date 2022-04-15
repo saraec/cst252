@@ -195,18 +195,6 @@ myButton.addEventListener("click", function() {
   removeClass(document.getElementById("hidden"));
 })
 
-// //   Get input from user
-//  $("#button").click(function(){
-// //     put id input in html
-//  var date = $("#input").val();
-//  var star = constellationName(date);
-//  console.log(constellationName);
-// //     put id output in html
-//   $("#output").html("<img src=" + starArray.url + ">");
-// //     append paragraph to output
-//   var newText = "Your Zodiac constellation is " + starArray.url;
-//   document.getElementById("output").innerHTML = newText;
-// })
 
 //Wes's code from Lab 13
   var newText = "<h2>" + starArray.title + "</h2>" +
