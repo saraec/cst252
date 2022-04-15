@@ -7,6 +7,10 @@ body {
   font-weight: bolder;
 }
 
+div.p {
+  color: white;
+}
+
 #output img {
   margin: 10px;
   max-width: 80%;
@@ -19,6 +23,8 @@ body {
   width: 700px;
   height: 700px;
   text-align: center;
+  float: left;
+  margin: 15px;
 }
 
 #output {
