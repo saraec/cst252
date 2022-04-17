@@ -38,6 +38,10 @@ h2, h3, h4, p{
  -o-border-radius:5px;
 }
 
+button {
+  color: black;
+}
+
 input[placeholder]{
    text-align: center;
    font-family: Arial;
@@ -91,7 +95,7 @@ input[placeholder]{
 #zodiac{
  position:absolute;
  z-index:2;
- width:30%;
+ width:25%;
  top:48%;
- left:35%;
+ left:38%;
 }
