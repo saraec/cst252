@@ -1,17 +1,8 @@
 
-// Create a <button> element (in jQuery, NOT In your HTML).
- // var myButton = $("<button>");
- // console.log(myButton);
- // // Add it to your output div
- // $("#enter").append(myButton);
-
-// label button
- // myButton.html("Submit");
 
  function birthDate(){
    var month=document.getElementById("month").value;
    var day=document.getElementById("day").value;
-
    var starArray=["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"];
    var imagesArray=["img/aries.png", "img/Taurus.png", "img/gemini.png", "img/cancer.png", "img/Leo.png", "img/virgo.png", "img/libra.png","img/scorpio.png","img/Sagittarius.png","img/Capricorn.png","img/aquarius.png","img/pisces.png"];
    var url;
@@ -70,15 +61,13 @@
      image=imagesArray[11];
    }
 
-   document.getElementById("display").innerHTML= sign;
-  document.getElementById("zodiac").src= image;
+   $("#display").html(sign);
+  $("#zodiac").attr("src", image);
  }
  }
 
-
-// button click event
-var myButton = document.getElementById("button");
- myButton.addEventListener("click", function() {
-  birthDate();
-  console.log(birthDate());
-});
+ // button click event
+  $("#button").click(function() {
+   birthDate();
+   console.log(birthDate());
+ });
