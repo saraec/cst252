@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab 16: Javascript Classes and Objects</title>
+	<title>Lab 19: AJAX</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="js/lab.js" defer></script>
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
 	<!--Boostrap from Wes's Slideshow-->
@@ -34,30 +35,28 @@
 				</ul>
 			</nav>
 
-			<h1>Lab 16: Javascript Classes and Objects</h1>
+			<h1>Lab 19: AJAX</h1>
 			<div class="row">
 				 <div class="col">
 					 <section><h2>Subject</h2>
-							<p class="summary">The subject of this lab is to go back through our past Javascript labs and debug them.</p></section>
+							<p class="summary">The subject of this lab is to experiment with jQuery and AJAX.</p></section>
+							<img src="img/endpoint.jpg">
 				</div>
 				<div class="col">
 						<section><h2>Difficulties</h2>
-						 <p class="summary">The lab was really simple because there wasn't much that needed fixing. I only needed to fix one task in one lab. </p></section>
+						 <p class="summary">This lab was fairly challenging for me because I don’t think I have a strong grasp of what API’s are or how to use them. I tried to follow the process we went through on JSFiddle. That was helpful in getting the formatt correct, but couldn’t help me all the way through because of the new API I chose. I tried using an API that made me use a key, but then I got a 409 error and couldn’t figure out how to solve it. I looked for a while to find an API I was able to get working. Finally, I found a Parks and Rec themed one that only needed me to define the url. It was only printed in the console at first. So I used the console.log in the JS to help me redefine what I was printing into the HTML.</p></section>
 				</div>
 				</div>
 				<div class="row">
 						<div class="col-sm-6">
 							<section><h2>Results</h2>
-								<p>I was able to use code from Lab 12 to fix the error in Lab 11. </p>
+								<p>I was able to link a API that generates random Ron Swanson quotes. </p>
 							</section>
-							<img src="img/javascript.jpg">
 						</div>
-						<div class="col">
-							<section><h2>Debugging</h2>
-								<img src="img/lab11.jpg">
-								 <p class="summary">The only unsolved problem I had in my labs was Task X for Lab 11. I attempted to create a button that changed the color of a section on my page. This was very easy to solve because it's exactly what we did for Lab 12. I just took my Javascript from Lab 12 and now the button works.</p>
+						<div id="output" class="col">
+								<button id="activate">Press Me</button>
 						</div>
-					 </section>
+							<a href="js/lab.js">*Javascript Source*</a>
 					</div>
 				</div>
 		</div>
