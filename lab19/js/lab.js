@@ -1,6 +1,6 @@
 
 ///
-var url = "http://ron-swanson-quotes.herokuapp.com/v2/quotes";
+var url = "https://ron-swanson-quotes.herokuapp.com/v2/quotes";
 // var apiKey = "7e57c9440bb09a28a4281dc3c389b983";
 
 $("#activate").click(getAjax);
