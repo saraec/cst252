@@ -25,6 +25,3 @@ function getAjax() {
        $("#output").html(data);
    });
     }
-
-      // $("#output").html("<h3>" + thisData.title);
-      // $("#output").append("<img src=" + fullUrl + ">");
