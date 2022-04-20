@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab 16: Javascript Classes and Objects</title>
+	<title>Lab 20: JSON & APIs</title>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script src="js/lab.js" defer></script>
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
 	<!--Boostrap from Wes's Slideshow-->
@@ -34,30 +35,28 @@
 				</ul>
 			</nav>
 
-			<h1>Lab 16: Javascript Classes and Objects</h1>
+			<h1>Lab 19: AJAX</h1>
 			<div class="row">
 				 <div class="col">
 					 <section><h2>Subject</h2>
-							<p class="summary">The subject of this lab is to go back through our past Javascript labs and debug them.</p></section>
+							<p class="summary">The subject of this lab is to experiment with processing JSON from an API.</p></section>
+							<img src="img/javascript.jpg">
 				</div>
 				<div class="col">
 						<section><h2>Difficulties</h2>
-						 <p class="summary">The lab was really simple because there wasn't much that needed fixing. I only needed to fix one task in one lab. </p></section>
+						 <p class="summary">The lecture in class on Wednesday really helped in my understanding of APIs and how to retrieve data from them. Creating the variables for the object's key values was really simple after doing it with the API we used in class. The only issue I ran into was getting the title to appear. It was because I made a syntax error and forgot to close my header tag. </p></section>
 				</div>
 				</div>
 				<div class="row">
 						<div class="col-sm-6">
 							<section><h2>Results</h2>
-								<p>I was able to use code from Lab 12 to fix the error in Lab 11. </p>
+								<p>I was able to link a API that generates the current comic from XKCD Comics. </p>
 							</section>
-							<img src="img/javascript.jpg">
 						</div>
-						<div class="col">
-							<section><h2>Debugging</h2>
-								<img src="img/lab11.jpg">
-								 <p class="summary">The only unsolved problem I had in my labs was Task X for Lab 11. I attempted to create a button that changed the color of a section on my page. This was very easy to solve because it's exactly what we did for Lab 12. I just took my Javascript from Lab 12 and now the button works.</p>
+						<div id="output" class="col">
+								<button id="activate">Press Me</button>
 						</div>
-					 </section>
+							<a href="js/lab.js">*Javascript Source*</a>
 					</div>
 				</div>
 		</div>
