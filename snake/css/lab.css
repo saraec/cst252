@@ -7,7 +7,7 @@ div{
 }
 
 body{
- background-image: url("../img/night-sky.png");
+ /* background-image: url("../img/night-sky.svg");  */
  background-color: #04042b;
  background-size: cover;
  background-repeat: no-repeat;
@@ -98,4 +98,30 @@ input[placeholder]{
  width:25%;
  top:48%;
  left:38%;
+}
+
+#output {
+  column-count: 3;
+}
+
+/* blinking glow */
+#glow {
+  z-index:-5;
+  animation: glow 2s ease infinite;
+}
+@keyframes glow {
+  /* split on and off blink (45:20 ratio) with a little fade out */
+  0%, 45% {
+    opacity: 100%;
+  }
+  70%,90% {
+    opacity: 33%;
+  }
+  /* brief blink after turning on */
+  5%,15% {
+    opacity: 100%;
+  }
+  10% {
+    opacity: 80%;
+  }
 }

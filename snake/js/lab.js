@@ -3,7 +3,7 @@
  function birthDate(){
    var month=document.getElementById("month").value;
    var day=document.getElementById("day").value;
-   var starArray=["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"];
+   var starArray=["aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
    var imagesArray=["img/aries.png", "img/Taurus.png", "img/gemini.png", "img/cancer.png", "img/Leo.png", "img/virgo.png", "img/libra.png","img/scorpio.png","img/Sagittarius.png","img/Capricorn.png","img/aquarius.png","img/pisces.png"];
    var url;
    var sign=[];
@@ -61,9 +61,42 @@
      image=imagesArray[11];
    }
 
-   $("#display").html(sign);
-  $("#zodiac").attr("src", image);
  }
+
+     $("#display").html(sign);
+    $("#zodiac").attr("src", image);
+
+         // horoscope variable
+         var url = "https://ohmanda.com/api/horoscope/" + sign;
+         console.log(url);
+         // use a jQuery AJAX call to fetch output from the numbers API
+        function getAjax() {
+            // Using the core $.ajax() method
+            $.ajax({
+            // The URL for the request
+            url: url,
+            // The data to send (will be converted to a query string)
+             data: {
+              sign: sign,
+            },
+            // Whether this is a POST or GET request
+            type: "GET",
+            // The type of data we expect back
+            // dataType : "json",
+            })
+        // If the request succeeds
+        .done(function( data ) {
+        //alert("Success!");
+        var horoscope = data.horoscope;
+        console.log(data);
+        /*  fullUrl = thisData.url; */
+        // Insert the output in the output div
+        /*
+        $("#output").html("<h3>" + thisData.title); */
+        $("#output").append("<p>" + horoscope + "</p>");
+        })
+        }
+
  }
 
  // button click event
