@@ -17,6 +17,10 @@ body{
  text-align:center;
 }
 
+.background {
+
+}
+
 h2, h3, h4, p{
  color: white;
  margin-bottom: 1%;
@@ -101,11 +105,11 @@ input[placeholder]{
 }
 
 #output {
-  column-count: 3;
+  column-count: 2;
 }
 
 /* blinking glow */
-#glow {
+#glow1 {
   z-index:-5;
   animation: glow 2s ease infinite;
 }
@@ -117,11 +121,18 @@ input[placeholder]{
   70%,90% {
     opacity: 33%;
   }
-  /* brief blink after turning on */
-  5%,15% {
-    opacity: 100%;
+}
+
+#glow2 {
+  z-index:-5;
+  animation: flicker 2s ease infinite;
+}
+@keyframes flicker {
+  /* split on and off blink (45:20 ratio) with a little fade out */
+  0%, 45% {
+    opacity: 33%;
   }
-  10% {
-    opacity: 80%;
+  70%,90% {
+    opacity: 100%;
   }
 }
