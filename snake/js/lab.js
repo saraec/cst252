@@ -3,7 +3,7 @@
  function birthDate(){
    var month=document.getElementById("month").value;
    var day=document.getElementById("day").value;
-   var starArray=["aries", "taurus", "gemini", "cancer", "leo", "virgo", "libra", "scorpio", "sagittarius", "capricorn", "aquarius", "pisces"];
+   var starArray=["Aries", "Taurus", "Gemini", "Cancer", "Leo", "Virgo", "Libra", "Scorpio", "Sagittarius", "Capricorn", "Aquarius", "Pisces"];
    var imagesArray=["img/aries.png", "img/Taurus.png", "img/gemini.png", "img/cancer.png", "img/Leo.png", "img/virgo.png", "img/libra.png","img/scorpio.png","img/Sagittarius.png","img/Capricorn.png","img/aquarius.png","img/pisces.png"];
    var url;
    var sign=[];
@@ -67,7 +67,7 @@
     $("#zodiac").attr("src", image);
 
          // horoscope variable
-         var url = "https://ohmanda.com/api/horoscope/" + sign;
+         var url = "https://ohmanda.com/api/horoscope/" + sign.toLowerCase();
          console.log(url);
          // use a jQuery AJAX call to fetch output from the numbers API
         function getAjax() {
@@ -93,7 +93,7 @@
         // Insert the output in the output div
         /*
         $("#output").html("<h3>" + thisData.title); */
-        $("#output").append("<p>" + horoscope + "</p>");
+        $("#output").html("<p>" + horoscope + "</p>");
         })
         }
 
@@ -103,4 +103,6 @@
   $("#button").click(function() {
    birthDate();
    console.log(birthDate());
+   getAjax();
+   console.log(getAjax());
  });
